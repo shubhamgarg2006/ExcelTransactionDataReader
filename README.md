@@ -15,6 +15,7 @@ You'll need your input excel to be in the same folder as your program titled: "p
 ### Inputs:
 
 | Input | Description |
+| :----- | ------: |
 | Date  | We kinda need to know when the transaction happens |
 | Action | We need to know what exactly happened on the date. Options include: Buy, Sell, Other, Int, Div |
 | Ticker | This tells what is being affected. Case senstive! List effects on cash as "Cash" (If you want to account for Pathward Financial Inc. use CASH) |
@@ -28,6 +29,7 @@ This is how I set up my excel sheet. You'll have to do it the same way if you wa
 #### Sheet 1
 This sheet is for the starting positions:
 | Ticker | Quantity | Cash |
+| :----- | :------: | ------: |
 |Cash |  No value for this| X |
 |XLC | Y | No value for this|
 
