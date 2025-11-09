@@ -36,9 +36,19 @@ This sheet is for the starting positions:
 Basically, assign cash a value in cash and assign equity positions a quanitity. Bloomberg will automatically find the closing price for that date.
 
 #### Sheet 2
+This is where all of your transactions go.
+
 |Date	| Action	|Ticker|	Amount|	Quantity	|Transaction Price|
+| :----- | :------: | :------: | :------: |  :------: |------: |
+|10/10/25| Int| Cash | 5 | 0| 0|
+|10/10/25| Sell| SPY | 200| 2 | 30|
+|10/10/25| Buy| INTC| -300|10|30|
+|10/10/25| Div| Cash| 14.5|0|0|
+|10/25/25| Other| Cash| -32|0|0|
 
-
+Int is Short for Interest
+Div is Short for Dividend
+Buy shoudl have a negative sign for amount
 
 ### Flaws of this system:
 These are things I plan to fix at one point!
