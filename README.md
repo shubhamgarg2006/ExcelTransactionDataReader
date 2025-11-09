@@ -8,3 +8,27 @@ The current best file to use is: excelReader.py
 
 ## How to use excelReader.py
 
+I used vscode to develop and run this program
+
+### Inputs:
+
+
+### Flaws of this system:
+
+
+## How did excelReader.py come to be?
+
+## How did ONELINE.PY come to be?
+
+## How did hello.py come to be?
+This was the first attempt to make this project work. At this point, I was entering each transaction into the terminal 
+
+## What started the whole project?
+Basically, we needed to find the date by date position history of our club's investment account to help us run attribution analysis (basically shows us how our investment descions fared against the idustry standard).
+
+With 140 lines of transaction data, it would not be worth our time to scale through all that data and would take way more time than needed. Thinking this, the python script idea was born, to optimize this process. 
+
+There were five types of transactions we needed to account for: buy, sell, interest, dividend, cash withdrawals, and other. Interest, Dividends, Cash Withdrawals and other were basically a cash account and would only affect our cash balance. The method for them was just just add them to to cash. NOTE: Cash Withdrawals were already a negative input (I'll explain more in the inputs section)
+
+### Can't you just take the very last transaction date's position history?
+If we only need to see the very last date, yes. But, we want to see how we did over time.
