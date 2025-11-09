@@ -46,9 +46,11 @@ This is where all of your transactions go.
 |10/10/25| Div| Cash| 14.5|0|0|
 |10/25/25| Other| Cash| -32|0|0|
 
-Int is Short for Interest
+Int is Short for Interest.
+
 Div is Short for Dividend
-Buy shoudl have a negative sign for amount
+
+Buy should have a negative sign for amount
 
 ### Flaws of this system:
 These are things I plan to fix at one point!
