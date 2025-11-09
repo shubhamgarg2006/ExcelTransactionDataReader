@@ -14,12 +14,29 @@ You'll need your input excel to be in the same folder as your program titled: "p
 
 ### Inputs:
 
+| Input | Description |
+| Date  | We kinda need to know when the transaction happens |
+| Action | We need to know what exactly happened on the date. Options include: Buy, Sell, Other, Int, Div |
+| Ticker | This tells what is being affected. Case senstive! List effects on cash as "Cash" (If you want to account for Pathward Financial Inc. use CASH) |
+| Amount | This is effectively the cash value of the transaction. List sells as positive and Buys as negative)
+| Quanity | How many shares are being bought?|
+|Transaction Price| List the commission/transaction fee if there is one (usually will be on buy and sell)
+
 ### Excel Input Setup:
 This is how I set up my excel sheet. You'll have to do it the same way if you want the program to work!
 
 #### Sheet 1
+This sheet is for the starting positions:
+| Ticker | Quantity | Cash |
+|Cash |  No value for this| X |
+|XLC | Y | No value for this|
+
+Basically, assign cash a value in cash and assign equity positions a quanitity. Bloomberg will automatically find the closing price for that date.
 
 #### Sheet 2
+|Date	| Action	|Ticker|	Amount|	Quantity	|Transaction Price|
+
+
 
 ### Flaws of this system:
 These are things I plan to fix at one point!
