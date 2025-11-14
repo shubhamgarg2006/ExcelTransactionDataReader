@@ -49,7 +49,7 @@ for date, day_trades in grouped:
             portfolio['Cash'] += (amount)   # pay cash for stock + transaction fee
         elif action == 'sell':
             portfolio[ticker] = portfolio.get(ticker, 0) + qty  # qty negative for sells
-            portfolio['Cash'] += (amount - trans_price)  # receive sale proceeds minus transaction fee
+            portfolio['Cash'] += (amount)  # receive sale and given to us as cash sold - transaction price
         elif action in ['div', 'int', 'other']:
             portfolio['Cash'] += amount
 
@@ -89,4 +89,5 @@ excel_df.to_excel(excel_output, index=False)
 
 print("✅ Portfolio positions saved to:")
 print(f"   - {text_output}")
+
 print(f"   - {excel_output}")
